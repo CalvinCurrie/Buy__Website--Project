@@ -3,16 +3,14 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    list-style: none;
-    text-decoration: none;
-    color: var(--darkBlue);
-    font-family: 'IBM Plex Serif', serif;
-    font-family: 'Inter', sans-serif;
-    z-index: 3;
-    --darkBlue: #141425;
-    --lightPeach: rgb(241, 225, 214);
     scroll-behavior: smooth;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    color: var(--darkBlue);
+    --darkBlue: #141425;
+    --lightPeach: rgba(241, 225, 214, 0.755);
+    font-family: 'IBM Plex Serif', serif;
 }
 
 section {
@@ -20,8 +18,8 @@ section {
 }
 
 .container {
-    display: flex;
-    max-width: 900px;
+    max-width: 1250px;
+    height: 100%;
     margin: 0 auto;
     padding: 40px;
 }
@@ -37,14 +35,13 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 10px;
-    height: 10vh;
+    height: 8vh;
     max-width: 1280px;
     margin: 0 auto;
 }
 
 .nav__bar--title {
-    font-size: 36px;
+    font-size: 48px;
     font-weight: 700;
     color: white;
 }
@@ -68,46 +65,41 @@ label {
 /* LANDING PAGE */
 
 #landing__page {
-    height: 50vh;
-}
-
-#landing__page .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    height: 92vh;
 }
 
 .landing__page--title {
     text-align: center;
-    font-size: 86px;
+    font-size: 72px;
+    padding: 20px 0;
+}
+
+.landing__page--para {
+    font-size: 28px;
 }
 
 .landing__page--description {
-    position: relative;
     display: flex;
     flex-direction: column;
-    width: 196px;
-    height: 59.2px;
+}
+
+.side__to__side {
+    display: flex;
+    text-align: center;
+}
+
+.paragraph-box {
+    width: 50%;
+    padding: 40px 10px;
+}
+
+.paragraph--bottom {
+    text-align: center;
+    width: 100%;
 }
 
 select {
-    padding: 20px 10px;
-    border-radius: 100px;
-    background-color: red;
-    z-index: 1;
-}
-
-.onHover--highlight {
-    position: absolute;
-    top: 0;
-    border-radius: 50%;
-    padding: 20px;
-    background-color: rgba(0, 81, 255, 0.457);
-    z-index: 2;
-}
-
-/* INFORMATION PAGE */
-
-#information {
-    height: 100vh;
+    padding: 15px 25px;
+    border-radius: 20px;
+    margin: 25px auto;
 }
