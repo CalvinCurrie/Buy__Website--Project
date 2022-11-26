@@ -13,6 +13,8 @@
     font-family: 'IBM Plex Serif', serif;
 }
 
+
+
 section {
     background-color: var(--lightPeach);
 }
@@ -29,14 +31,14 @@ section {
 nav {
     background-color: var(--darkBlue);
     padding: 0 30px;
+    height: 10vh;
 }
 
 .nav__bar {
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    height: 8vh;
-    max-width: 1280px;
+    align-items: center;
+    max-width: 996px;
     margin: 0 auto;
 }
 
@@ -50,7 +52,6 @@ nav {
     display: flex;
     justify-content: space-between;
     color: white;
-    width: 500px;
 }
 
 .nav__list a {
@@ -65,20 +66,39 @@ label {
 /* LANDING PAGE */
 
 #landing__page {
-    height: 92vh;
+    height: 75vh;
 }
 
-.landing__page--title {
-    text-align: center;
+.landing--title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-size: 72px;
-    padding: 20px 0;
+    height: 400px;
 }
 
-.landing__page--para {
+.fa-space-awesome {
+    color: black;
+    font-size: 40px;
+}
+
+#mouse-follow {
+    background: orange;
+    position: absolute;
+    width: 15px;
+    transition: all 300ms ease-out;
+}
+
+/*  */
+.option__page--title {
+    text-align: center;
+}
+
+.option__page--para {
     font-size: 28px;
 }
 
-.landing__page--description {
+.option__page--description {
     display: flex;
     flex-direction: column;
 }

@@ -1,7 +1,9 @@
-// let div = document.querySelector(".landing__page--description");
+document.addEventListener("mousemove", (e) => {
+  const mouseFollow = document.getElementById("mouse-follow");
+  const x = e.clientX - 25; //-25 to center div over mouse
+  const y = e.clientY - 25;
+  console.log(x);
 
-// div.addEventListener("mousemove", function (e) {
-//   x = e.offsetX;
-//   y = e.offsetY;
-//   div.style.backgroundColor = `rgb(${x}, ${y}, ${x - y})`;
-// });
+  mouseFollow.style.top = `${y}px`;
+  mouseFollow.style.left = `${x}px`;
+});
